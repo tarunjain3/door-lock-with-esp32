@@ -85,7 +85,9 @@ void loop() {
     Serial.print(now.minute(), DEC);
     Serial.print(':');
     Serial.println(now.second(), DEC);
-    digitalWrite(relay,HIGH);
+    digitalWrite(relay,LOW);
+    delay(2000);
+     digitalWrite(relay,HIGH);
      Serial.println(" ");
   }
    else if (content.substring(1) == "EB 43 01 99") //change here the UID of the card/cards that you want to give access
@@ -109,7 +111,9 @@ void loop() {
     Serial.print(now.minute(), DEC);
     Serial.print(':');
     Serial.println(now.second(), DEC);
-    digitalWrite(relay,HIGH);
+    digitalWrite(relay,LOW);
+    delay(2000);
+     digitalWrite(relay,HIGH);
          Serial.println(" ");
   }
  else   {
